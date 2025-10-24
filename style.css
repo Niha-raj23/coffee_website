@@ -113,19 +113,19 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link {
-    padding:10px 18px;
+    padding: 10px 18px;
     color: var(--white-color);
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
 }
 
-.navbar .nav-menu .nav-link:hover{
+.navbar .nav-menu .nav-link:hover {
     color: var(--primary-color);
     background: var(--secondary--color);
 
 }
-.navbar :where(#menu-close-button, #menu-open-button){
+.navbar :where(#menu-close-button, #menu-open-button) {
     display: none;
 }
 
@@ -139,7 +139,7 @@ header .navbar {
 
 .hero-section .section-content {
     display: flex;
-    padding-top:40px;
+     padding-top: 40px;
     align-items: center;
     min-height: 100vh;
     color: var(--white-color);
@@ -438,31 +438,33 @@ background: var(--light-pink-color);
        backdrop-filter: blur(5px);
        background: rgba(0, 0, 0, 0.2);
     }
-    .navbar :where(#menu-close-button,
-     #menu-open-button){
+    .navbar :where(#menu-close-button, #menu-open-button) {
         display: block;
         font-size: var(--font-size-l);
     }
-    .navbar #menu-close-button{
+    .navbar #menu-close-button {
         position: absolute;
         right: 30px;
         top: 30px;
     }
-    .navbar #menu-open-button{
-        color: var(--white-color)
+
+    .navbar #menu-open-button {
+        color: var(--white-color);
     }
+
     .navbar .nav-menu {
         display: block;
         position: fixed;
-        left: -300px;
+        left: -300%;
         top: 0;
-        width: 300px;
+        width: 250px;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 100px;
         background: var(--white-color);
+        transition: left 0.2 ease;
     }
 
     body.show-mobile-menu .navbar .nav-menu {
@@ -473,14 +475,14 @@ background: var(--light-pink-color);
         color: var(--dark-color);
         display: block;
         margin-top: 17px;
-        font-size: var(--font-size-1);
+        font-size: var(--font-size-l);
     }
 
     .hero-section .section-content {
+         gap: 50px;
+         text-align: center;
+         padding: 30px 20px 20px;
         flex-direction: column-reverse;
-        text-align: center;
-        padding:30px 20px 20px;
-        gap: 50px;
         justify-content: center;
     }
 
